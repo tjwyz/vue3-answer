@@ -44,3 +44,6 @@ npm run dev
 
 # 发布环境
 npm run build
+
+运行展示
+![Image text](https://raw.githubusercontent.com/Oudanlu/vue3-answer/master/src/images/ewm.png）
