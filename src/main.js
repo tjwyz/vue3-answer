@@ -1,4 +1,5 @@
 import Vue from 'vue'
+import App from './App.vue';
 import VueRouter from 'vue-router'
 import routes from './router/router'
 import store from './store/'
@@ -14,13 +15,11 @@ const router = new VueRouter({
 //runtime
 
 new Vue({
+    el: '#app',
     router,
     store,
-
-}).$mount("#app")
-
-/*new Vue({
-    router,
-    store,
-}).$mount('#app');
-*/
+    components: {
+        App,
+    },
+    render: c => c(App),
+});
